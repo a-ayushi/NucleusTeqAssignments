@@ -1,0 +1,154 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  /* margin: 0px; */
+}
+#start-screen {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  /* margin: 0px; */
+}
+
+.quiz {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px;
+}
+
+.card {
+  background-color: pink;
+  padding: 29px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+select {
+  padding: 8px;
+  width: 65%;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-start {
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: rgba(30, 184, 244, 0.7);
+}
+
+#btn-start:hover {
+  background-color: rgb(30, 184, 244);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.rules {
+  width: 50%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#quiz-container {
+  background: pink;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+}
+#end-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: pink;
+  padding: 29px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#end-screen h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#options button:hover {
+  background: #0056b3;
+}
+
+#timer {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.correct {
+  background-color: #28a745 !important;
+  /* background-color: white !important;
+  border: solid #28a745 !important;
+  color: black !important; */
+}
+
+.incorrect {
+  background-color: #dc3545 !important;
+}
+
+/* #end-screen {
+  display: none;
+} */
+
+#restart-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(30, 184, 244, 0.7);
+}
+
+#restart-btn:hover {
+  background: rgb(30, 184, 244);
+}
