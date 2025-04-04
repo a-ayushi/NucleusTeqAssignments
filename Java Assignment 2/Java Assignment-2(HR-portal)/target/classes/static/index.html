@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="auth-buttons">
+        <h1 class="hr-portal">HR-PORTAL</h1>
+        <button onclick="location.href='register.html'">Register</button>
+        <button onclick="location.href='login.html'">Login</button>
+    </div>
+
+    <div id="employee-section" style="display: none;">
+        <h2 class="emp-details">Employee Details</h2>
+        <div class="table-container">
+        <table >
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Salary</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="employee-table-body">
+            <!-- Employee data will be inserted here dynamically -->
+            </tbody>
+        </table>
+        </div>
+        <div class="button-group">
+        <button id="logout-btn" onclick="logout()">Logout</button>
+        <button id="addEmployeeBtn" onclick="showAddForm()">Add Employee</button>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Employee Form (Hidden Initially) -->
+<div id="editFormContainer" class="hidden">
+    <h2>Edit Employee</h2>
+    <form id="editEmpForm">
+        <input type="hidden" id="editEmpId">
+        <label>Name:</label>
+        <input type="text" id="editName" required>
+        <label>Department:</label>
+        <input type="text" id="editDept" required>
+        <label>Email:</label>
+        <input type="email" id="editEmail" required>
+        <label>Salary:</label>
+        <input type="number" id="editSalary" required>
+        <button type="submit">Update</button>
+        <button type="button" onclick="closeEditForm()">Cancel</button>
+    </form>
+</div>
+
+<!-- Add Employee Form (Hidden Initially) -->
+<div id="addFormContainer" class="modal hidden">
+    <h2>Add Employee</h2>
+    <form id="addEmpForm">
+        <label>Name:</label>
+        <input type="text" id="addName" required>
+        <label>Department:</label>
+        <input type="text" id="addDept" required>
+        <label>Email:</label>
+        <input type="email" id="addEmail" required>
+        <label>Salary:</label>
+        <input type="number" id="addSalary" required>
+        <button type="submit">Add</button>
+        <button type="button" onclick="closeAddForm()">Cancel</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

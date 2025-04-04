@@ -1,0 +1,526 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Home Page Styling */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+.form-container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Employee Table Styling */
+.table-container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-x:auto;
+}
+
+table {
+    width: 100%;
+       border-collapse: collapse;
+       background: #ffffff;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+th, td {
+
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight:bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s ease;
+}
+
+/* Action Buttons Styling */
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#logout-btn,
+#addEmployeeBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-btn:hover,
+#addEmployeeBtn:hover {
+    background-color: #138496;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container, .form-container, .table-container {
+        width: 95%;
+    }
+}
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #138496;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#editFormContainer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    background: #f9f9f9;
+}
+
+.emp-details{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+.hr-portal{
+ text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#auth-buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+#auth-buttons button {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#auth-buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/*-login form css --*/
+/* Centering the form */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Title Styling */
+.login-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#login-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+#login-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Register form Styling*/
+/* Centering the Register Form */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Title Styling */
+.register-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+#register-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#register-form input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Register Button */
+#register-form button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#register-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+/* Styling for Add Employee Form */
+.modal {
+     /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Add Employee Title */
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+#addEmpForm label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+#addEmpForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#addEmpForm input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+#addEmpForm button {
+    width: 48%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addEmpForm button[type="submit"] {
+    background: #28a745;
+    color: white;
+}
+
+#addEmpForm button[type="submit"]:hover {
+    background: #218838;
+}
+
+#addEmpForm button[type="button"] {
+    background: #dc3545;
+    color: white;
+}
+
+#addEmpForm button[type="button"]:hover {
+    background: #c82333;
+}
+
+
+/* Styling for Edit Employee Form */
+#editFormContainer {
+        position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Edit Employee Title */
+#editFormContainer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+#editEmpForm label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+#editEmpForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#editEmpForm input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+#editEmpForm button {
+    width: 48%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#editEmpForm button[type="submit"] {
+    background: #ffc107;
+    color: black;
+}
+
+#editEmpForm button[type="submit"]:hover {
+    background: #e0a800;
+}
+
+#editEmpForm button[type="button"] {
+    background: #dc3545;
+    color: white;
+}
+
+#editEmpForm button[type="button"]:hover {
+    background: #c82333;
+}
+
+/* popup styling*/
+.error-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
